@@ -364,41 +364,98 @@ main{
 
 .footer{
   background-color: #01122F;
-  height: 310px;
+  height: 300px;
   margin: 0px;
 }
   .footer-nav-panel{
-    padding-top: 55px;
-    position: relative;
-    width: 34%;
-    margin-right: 0px;
+      margin-right: 0px;
+      display: inline-block;
+      width: 40%;
+      vertical-align: top;
+      margin-top: 55px;
+      margin-bottom: 65px;
+
   }
-  .footer-nav-panel-column{
-    float: left;
-  }
-  .footer-nav-panel-column a{
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    display: block;
-    padding-right: 60px;
-    padding-bottom: 10px;
-  }
+      .footer-nav-panel-column{
+        display: inline-block;
+        padding-right: 60px;
+        vertical-align: top;
+
+
+        }
+      .footer-nav-panel-column a{
+          display: block;
+          color: white;
+          text-decoration: none;
+          font-size: 12px;
+          padding-bottom: 10px;
+          vertical-align: top;
+        }
   .footer-news-agency{
-    position: relative;
-    float:left;
-    margin: 0;
+    display: inline-block;
+    width: 32%;
+    margin: 55px auto 0 auto;
+    vertical-align: top;
+    margin-bottom: 65px;
+
   }
-    .footer-news-agency img{
-      position: relative;
-      display: block;
-      margin-bottom: 10px;
-    }
-    .footer-news-agency a{
-      color: white;
-      text-decoration: none;
-      font-size: 12px;
-      display: block;
-      padding-bottom: 10px;
-      position: relative;
-    }
+      .footer-news-agency img{
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0px;
+      }
+      .footer-news-agency a{
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        display: block;
+        padding-bottom: 10px;
+
+      }
+  .footer-contact{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 55px;
+    margin-bottom: 65px;
+
+
+  }
+      .footer-contact-social-media{
+        margin-bottom: 20px;
+      }
+        .fcsm-vk {
+          display: inline-block;
+          margin-left: 20px;
+        }
+          .fcsm-vk img{
+
+          }
+       .footer-contact-phone-number{
+         color: white;
+         margin-bottom: 25px;
+
+       }
+         .footer-contact-phone-number img{
+           margin-right: 19px;
+           margin-left: 20px;
+         }
+      .footer-contact-email{
+          color: white;
+      }
+        .footer-contact-email img{
+          margin-right: 19px;
+          margin-left: 20px;
+        }
+  .footer-greyline{
+    background-image:  url('img/line.png');
+    min-width: 1000px;
+    background-repeat: repeat;
+    height: 3px;
+  }
+  .footer-finale-text{
+    color:#c3c3ca;
+    font-size:12px;
+    text-align: center;
+    min-width: 1000px;
+    margin-top: 15px;
+  }
