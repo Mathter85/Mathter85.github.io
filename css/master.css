@@ -167,8 +167,9 @@ main{
           padding-bottom:25px;
           padding-top:0px;
         }
-          .column-left-form input{
+          .column-left-form button{
             margin-left: 35px;
+            margin-bottom: 20px;
             padding: 0;
             background-color: transparent;
             width: 175px;
@@ -374,11 +375,14 @@ main{
       vertical-align: top;
       margin-top: 55px;
       margin-bottom: 65px;
+
   }
       .footer-nav-panel-column{
         display: inline-block;
         padding-right: 60px;
         vertical-align: top;
+
+
         }
       .footer-nav-panel-column a{
           display: block;
@@ -387,7 +391,7 @@ main{
           font-size: 12px;
           padding-bottom: 10px;
           vertical-align: top;
-      }
+        }
   .footer-news-agency{
     display: inline-block;
     width: 32%;
@@ -407,12 +411,15 @@ main{
         font-size: 12px;
         display: block;
         padding-bottom: 10px;
+
       }
   .footer-contact{
     display: inline-block;
     vertical-align: top;
     margin-top: 55px;
     margin-bottom: 65px;
+
+
   }
       .footer-contact-social-media{
         margin-bottom: 20px;
