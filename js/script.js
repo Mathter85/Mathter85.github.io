@@ -34,7 +34,7 @@ $(function(){
   function preventMotion(event)
   {
     if (!scroll) {
-      $('html').css({'overflow-x': 'hidden'});  
+      $('html, body').css({'overflow-x': 'hidden'});  
       console.log('yes');
       event = event || window.event;
       window.scrollTo(0, 0);
