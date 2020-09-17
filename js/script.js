@@ -28,4 +28,18 @@ $(function(){
 
   var buttonEnableScroll = document.getElementById('enableScroll');
   buttonEnableScroll.onclick= enableScroll;
+  
+  window.addEventListener("touchmove", preventMotion, false);
+
+  function preventMotion(event)
+  {
+    if (!scroll) {
+      console.log('yes');
+      event = event || window.event;
+      window.scrollTo(0, 0);
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }
+  
 });
