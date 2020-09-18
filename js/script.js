@@ -4,6 +4,12 @@ $(function(){
 
   function disableScroll(){
     scroll = false;
+    
+    //
+      $('body').css({
+        'height':'100%',
+        'overflow':'hidden'});
+    //
     $('html, body, header, main, footer').on('mousewheel',function(){
       return false;
     });
@@ -11,6 +17,12 @@ $(function(){
 
   function enableScroll(){
     scroll=true;
+    
+    //
+      $('body').css({
+        'height':'100%',
+        'overflow':'hidden'});
+    //
     $('html, body, header, main, footer').off('mousewheel');
   }
 
