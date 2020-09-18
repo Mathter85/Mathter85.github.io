@@ -1,350 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Новостное агенство</title>
+    <title> Список дел (HTML_Модуль 4_JS4_HW)</title>
     <link rel="stylesheet" href="css/master.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <header>
-         <div id="black-bar" >
-           <div  class="fixed-container">
-              Самые <a href="#">свежие новости</a> в реальном мире
-              <div id="datetime">12:44 20.01.2020</div>
-           </div>
-         </div>
-         <div id="header">
-           <div class="fixed-container"> <!-- Строка время доп информации-->
-             <img id="logo" src="img/logo.png" alt="Логотип новостного агенства">
-             <div class="header-date">19 июня, вторник</div>
-             <div class="header-time">10:48</div>
-             <div class="header-weather">+22 &deg;C</div>
-             <form class="header-form" action="index.html" method="post">
-                   <input id="header-search" type="text" name="Search" placeholder="Поиск по сайту" value="">
-             </form>
-           </div>
-
-         </div>
-          <div id="menu-container">
-            <div class="fixed-container">
-               <nav id="nav_panel">
-                 <a href="#">Главная</a>
-                  <div  class="nav_link_separator">/</div>
-                 <a href="#">Политика</a>
-                 <div  class="nav_link_separator">/</div>
-                 <a href="#">Общество</a>
-                 <div  class="nav_link_separator">/</div>
-                 <a href="#">Экономика</a>
-                 <div  class="nav_link_separator">/</div>
-                 <a href="#">В мире</a>
-                 <div  class="nav_link_separator">/</div>
-                 <a href="#">Происшествия</a>
-                 <div  class="nav_link_separator">/</div>
-                 <a href="#">Спорт</a>
-                 <div  class="nav_link_separator">/</div>
-                 <a href="#">Наука</a>
-                 <div  class="nav_link_separator">/</div>
-                 <a href="#">Туризм</a>
-
-               </nav>
-            </div>
-          </div>
-    </header>
     <main>
-      <div id="central-container">
-        <div class="fixed-container">
-          <div id="column-left">
-              <h2>Новость дня</h2>
-              <div class="news-item">
-                  <div class="news-item-text">
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="news-item-props">
-                    <a href="#">/ ЧМ по футбоолу</a>
-                    <div class="news-time">
-                      10:48
-                    </div>
-                    <div class="news-comments">
-                      15
-                    </div>
-                  </div>
-              </div>
-              <div class="news-item">
-                  <div class="news-item-text">
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="news-item-props">
-                    <a href="#">/ ЧМ по футбоолу</a>
-                    <div class="news-time">
-                      10:48
-                    </div>
-                    <div class="news-comments">
-                      15
-                    </div>
-                  </div>
-              </div>
-              <div class="news-item">
-                  <div class="news-item-text">
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="news-item-props">
-                    <a href="#">/ ЧМ по футбоолу</a>
-                    <div class="news-time">
-                      10:48
-                    </div>
-                    <div class="news-comments">
-                      15
-                    </div>
-                  </div>
-              </div>
-              <div class="news-item">
-                  <div class="news-item-text">
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="news-item-props">
-                    <a href="#">/ ЧМ по футбоолу</a>
-                    <div class="news-time">
-                      10:48
-                    </div>
-                    <div class="news-comments">
-                      15
-                    </div>
-                  </div>
-              </div>
-              <div class="news-item">
-                  <div class="news-item-text">
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="news-item-props">
-                    <a href="#">/ ЧМ по футбоолу</a>
-                    <div class="news-time">
-                      10:48
-                    </div>
-                    <div class="news-comments">
-                      15
-                    </div>
-                  </div>
-              </div>
-              <div class="news-item">
-                  <div class="news-item-text">
-                      Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="news-item-props">
-                    <a href="#">/ ЧМ по футбоолу</a>
-                    <div class="news-time">
-                      10:48
-                    </div>
-                    <div class="news-comments">
-                      15
-                    </div>
-                  </div>
-              </div>
-              <form class="column-left-form" action="index.html" method="post">
-                <button id="disableScroll" type="button" name="disableScroll">Отключить скролл</button>
-                <button id="enableScroll" type="button" name="enableScroll">Включить скролл</button>
-              <!--  <input id="disableScroll" type="button" name="disableScroll" value="Отключить скролл">
-                <input id="enableScroll" type="button" name="enableScroll" value="Включить скролл"> -->
-              </form>
+      <div class="fixed-container">
+        <div class="list-tasks-column">
+          <div class="ltc-header">Список дел:</div>
+          <div class="ltc-emptylist">Список пуст...</div>
+
+<!--
+          <div class="ltc-task">
+            <div class="ltc-nameTask">Название задачи</div>
+            <button class="button-deleteTask" type="button" name="deleteTask"><img src="img/del-button.png" alt="delete"></button>
+            <button class="button-rowDown" type="button" name="rowDown"></button>
           </div>
-          <div id="column-center">
-            <div class="center_first_block">
-              <div class="central-news-a, first-block-a"> <a href="#">/ Политика</a> </div>
-              <div class="central-news-item-text, first-block-t">
-                1 В крыму отреагировали на слова Кравчука о возврате полуострова
-              </div>
-              <div class="central-news-item-props">
-                <div class="header-date-f">19 июня 2018</div>
-                <div class="header-time-f">10:48</div>
-              </div>
-            </div>
-            <div class="central_news_block">
-              <div class="central_news-item_l">
-                  <img class="central-news-item-img" src="img/2-1.png" alt="фото 2-1">
-                  <div class="central-news-item-text">
-                    2-1  Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                    2-1  Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-201
-                    2-1  Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-201
-                  </div>
-                  <div class="central-news-item-props">
-                    <div class="central-news-a"> <a href="#">/ Политика</a> </div>
-                    <div class="central-news-time">10:48</div>
-                    <div class="central-news-comments">15</div>
-                  </div>
-              </div>
-              <div class="central_news-item_r">
-                  <img class="central-news-item-img" src="img/2-1.png" alt="фото 2-1">
-                  <div class="central-news-item-text">
-                  2-2 Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="central-news-item-props">
-                    <div class="central-news-a"><a href="#">/ Общество</a></div>
-                    <div class="central-news-time">10:48</div>
-                    <div class="central-news-comments">15</div>
-                  </div>
-              </div>
-            </div>
-            <div class="central_news_block">
-              <div class="central_news-item_l">
-                  <img class="central-news-item-img" src="img/2-1.png" alt="фото 2-1">
-                  <div class="central-news-item-text">
-                    3-1  Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="central-news-item-props">
-                    <div class="central-news-a"><a href="#">/ Интернет</a></div>
-                    <div class="central-news-time">10:48</div>
-                    <div class="central-news-comments">15</div>
-                  </div>
-              </div>
-              <div class="central_news-item_r">
-                  <img class="central-news-item-img" src="img/2-1.png" alt="фото 2-1">
-                  <div class="central-news-item-text">
-                  3-2    Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
-                  </div>
-                  <div class="central-news-item-props">
-                    <div class="central-news-a"><a href="#">/ Политика</a></div>
-                    <div class="central-news-time">10:48</div>
-                    <div class="central-news-comments">15</div>
-                  </div>
-              </div>
-            </div>
+          <div class="ltc-descriptionTask">
+            Описание задачи
           </div>
-          <aside id="column-right">
-            <img src="img/banner-1.png" alt="banner-1">
-            <img src="img/banner-2.png" alt="banner-2">
-          </aside>
+
+-->
         </div>
-        <div class="fixed-container">
-          <div class="section-news">
-            <div id="sn-left-box">
-              <img class="sn-left-image" src="img/photo-sn-l.jpg" alt="photho-sn-l">
-              <div class="snlb-background-gray"></div>
-              <div class="sn-left-text-container">
-                <div class="snltc-href"> <a href="#">/ Политика</a> </div>
-                <div class="snltc-article-name">
-                  Пекин обвинил Вашингтон в развязывании торговой войны
-                </div>
-                <div class="snltc-props">
-                  <div class="snltc-props-date">10 июня 2018</div>
-                  <div class="snltc-props-time">10:48</div>
-                </div>
-                <div class="snltc-article-text">
-                  Министерство коммерции Китая заявли, что Пекин примет "качественные" и "количественные" меры,
-                  если призедент США Дональд Трамп введет дополнительные пошлины на китайские товары
-                </div>
-              </div>
-            </div>
-            <div id="sn-right-box">
-                <h2>Самые читаемые новости</h2>
-              <div class="news-item">
-                    <div class="news-item-text">
-                        В турции пообещали найти альтернативу из-за отказа США поставить F-35
-                    </div>
-                    <div class="news-item-props">
-                      <a href="#">/ Политика</a>
-                      <div class="news-time">
-                        11:39
-                      </div>
-                      <div class="news-comments">
-                        25
-                      </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="news-item-text">
-                        Назван минимальный доход для причисления к среднему классу
-                    </div>
-                    <div class="news-item-props">
-                      <a href="#">/ Политика</a>
-                      <div class="news-time">
-                        11:39
-                      </div>
-                      <div class="news-comments">
-                        25
-                      </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="news-item-text">
-                        В турции пообещали найти альтернативу из-за отказа США поставить F-35
-                    </div>
-                    <div class="news-item-props">
-                      <a href="#">/ Политика</a>
-                      <div class="news-time">
-                        11:39
-                      </div>
-                      <div class="news-comments">
-                        25
-                      </div>
-                    </div>
-                </div>
-            </div>
+        <div class="add-new-task-column">
+          <div class="antc-header">Добавить новое дело</div>
+          <div class="antc-main-field">
+            <form action="index.html" method="post">
+                <div class="antc-main-field-label-name"><sup>*</sup> Название</div>
+                <input class="antc-text-nameNewTask" required type="text" name="nameNewTask" value="">
+                <div class="antc-main-field-label-description"><sup>*</sup> Описание</div>
+                <textarea class="antc-text-descriptonNewTask" required maxlength="1000" required rows="10"></textarea>
+                <input class="antc-text-button" type="button" name="" value="Добавить дело">
+            </form>
           </div>
         </div>
       </div>
-
-     </main>
-    <footer class="footer">
-        <div class="fixed-container">
-            <div class="footer-nav-panel">
-                <div class="footer-nav-panel-column">
-                  <a href="#">Главная</a>
-                  <a href="#">Политика</a>
-                  <a href="#">Общество</a>
-                  <a href="#">Экономика</a>
-                  <a href="#">В мире</a>
-                </div>
-                <div class="footer-nav-panel-column">
-                  <a href="#">Путешествия</a>
-                  <a href="#">Спорт</a>
-                  <a href="#">Наука</a>
-                  <a href="#">Туризм</a>
-                </div>
-            </div>
-            <div class="footer-news-agency">
-                <img id="" src="img/icon-newsagency.png" alt="Логотип новостного агенства">
-                <a href="#">Об агенстве</a>
-                <a href="#">Контакты</a>
-                <a href="#">Опубликовать новость</a>
-            </div>
-            <div class="footer-contact">
-                <div class="footer-contact-social-media">
-                    <div class="fcsm-vk">
-                      <img src="img/vk.png" alt="VK">
-                    </div>
-                    <div class="fcsm-vk">
-                      <img src="img/vk.png" alt="VK">
-                    </div>
-                    <div class="fcsm-vk">
-                      <img src="img/vk.png" alt="VK">
-                    </div>
-                    <div class="fcsm-vk">
-                      <img src="img/vk.png" alt="VK">
-                    </div>
-                </div>
-                <div class="footer-contact-phone-number">
-                  <img src="img/icon-phone.png" alt="VK">
-                  +7 (499) 995-55-55
-                </div>
-                <div class="footer-contact-email">
-                  <img src="img/icon-envelope.png" alt="VK">
-                  info@agency.ru
-                </div>
-            </div>
-        </div>
-        <div class="footer-greyline"></div>
-        <div class="footer-finale-text">
-          &copy; Новостное агенство, 2017-2018 все права защищены
-        </div>
-    </footer>
+    </main>
   </body>
 </html>

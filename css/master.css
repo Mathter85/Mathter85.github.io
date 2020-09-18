@@ -1,462 +1,161 @@
-html, body {
-  padding: 0px 0px;
-  margin: 0px 0px;
+html, body{
+  padding: 0;
+  margin: 0;
   min-width: 1000px;
   font-family: Arial;
+  background-color: #f5f5f5;
 }
-
-#black-bar{
-      background-color:#01122f;
-      color:#d1d2d5;
-      margin: 0px 0px;
-      padding: 20px 0px;
-}
-  #black-bar a{ /*тольк для ссылок в black-bar*/
-  color: #d1d2d5;
-}
-
-#menu-container{
-  height: 70px;
-}
-  h2 {
-    padding: 27px 0 27px 18px;
-    margin: 0 0 34px 0;
-    border-bottom: 1px solid #e5e5e5;
-  }
-  .fixed-container{
-    width: 960px;
-    margin: 0 auto; /*выравнивание блока по горизонтали*/
-    position: relative;
-  }
-    .header-date{
-      position: absolute;
-      color:#c3c3ca;
-      top:52px;
-      right: 530px;
-    }
-    .header-time{
-      position: absolute;
-      color:#c3c3ca;
-      top:52px;
-      padding-top: 0px;
-      right:450px;
-      padding-left: 20px;
-      background-image: url('img/icon-time.png');
-      background-repeat: no-repeat;
-      background-position:left;
-
-    }
-    .header-weather{
-      position: absolute;
-      color:#c3c3ca;
-      top:52px;
-      right:350px;
-      padding-left: 38px;
-      background-position:left;
-      background-size:contain;
-
-      background-image: url('img/icon-cloud.png');
-      background-repeat: no-repeat;
-    }
-    #header-search{
-      position: absolute;
-      top:37px;
-      right: 0px;
-      border-style: none;
-      background-color: #f3f3f3;
-      color:black;
-      border-radius: 50px;
-      padding: 0 0 0 20px;
-      height: 45px;
-      width: 290px;
-      background-image: url('img/icon-lupa.png');
-      background-repeat: no-repeat;
-      background-position-x:270px; /*выравниваем лупу  ширина поля 290 - 20 = 270*/
-      background-position-y:center; /* выравнивем лупу по центру поля*/
-      font-family: Arial;
-      font-size: 16px;
-
-    }
-    #header-search::placeholder{  /* работаем с текстом подсказкой внутри ввода*/
-      color:#c3c3ca;
-      font-size: 13px;
-    }
-    #nav_panel{
-      padding-top: 19px; /* равняем по центру 70 высота панели / 2 - 16px размер шрифта*/
-    }
-      #nav_panel a{
-        color: #6b6b6b;
-        text-decoration: none; /* убираем у ссылок подчеркивание*/
-      }
-      #nav_panel a:hover{
-        text-decoration:underline; /* при наведегнии мышки появляется у ссылок подчеркивание*/
-      }
-    .nav_link_separator{
-      display: inline-block;
-      margin: 0 13px;  /* отступы слева и справа от ссылок*/
-      color: #6b6b6b;
-    }
-  #datetime{
-    float:right; /*выравнивание по правому краю с обтеканием блока*/
-  }
-  #logo{
-    position: absolute;
-    top:40px;
-    /*display: inline-block;*/
-  }
-  #header{
-    height: 100px;
-
-  }
-
 main{
-    background-color: #f9f9f9;
-    padding: 0;
-    margin: 0;
-}
-  #central-container{
-    background-color: #f9f9f9;
-    padding-top: 20px;
-    padding-bottom: 50px;
-  }
-    #central-container .fixed-container{
-      overflow-y:hidden; /*чтобы нижние блоки не обтекали*/
-    }
-      #column-left{
-          background-color: white;
-          width: 250px;
-          float: left;
-      }
-        .news-item{
-          font-size: 16px;
-          padding-left: 20px;
-          padding-bottom: 30px;
-        }
-          .news-item-text{
-            max-height: 3.3em; /*чтобы высота была не более*/
-            overflow: hidden; /* чтобы текст обрезался*/
-            margin-bottom: 15px;
-            font-family: Arial;
-            font-size: 16px;
-
-          }
-          .news-item-props{
-            font-size: 12px;
-            position: relative;
-          }
-            .news-item-props a{
-              color:#c3c3ca;
-            }
-            .news-time{
-              position:   absolute;
-              top:0;
-              left: 120px;
-              padding-left: 15px;
-              background-image: url('img/icon-time.png');
-              background-repeat: no-repeat;
-            }
-            .news-comments{
-              position: absolute;
-              top:0px;
-              left:180px;
-              padding-left: 15px;
-              background-image: url('img/icon-comments.png');
-              background-repeat: no-repeat;
-            }
-        .column-left-form{
-          padding-bottom:25px;
-          padding-top:0px;
-        }
-          .column-left-form button{
-            margin-left: 35px;
-            margin-bottom: 20px;
-            padding: 0;
-            background-color: transparent;
-            width: 175px;
-            height: 45px;
-            color: #448ccb;
-            border-radius: 50px;
-            border-color: #448ccb;
-            text-size:10px;
-          }
-      #column-center{
-          width: 420px;
-          margin-left: 20px;
-          float: left;
-      }
-        .center_first_block{
-           height: 320px;
-
-           background-image: url('img/1.jpg');
-           background-repeat: no-repeat;
-           margin-bottom: 20px;
-         }
-          .center_first_block a{
-            color:#c3c3ca;
-          }
-          .first-block-a{
-            font-size:12px;
-            padding-left: 20px;
-            padding-top: 120px;
-          }
-          .first-block-t{
-            font-size:20px;
-            padding-left: 20px;
-            padding-top: 20px;
-            padding-right: 90px;
-            font-weight: bold;
-            color:white;
-            overflow: hidden;
-            height: 69px;
-          }
-          .header-date-f{
-            color: white;
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 30px;
-          }
-          .header-time-f{
-            color: white;
-            background-image: url('img/icon-time.png');
-            background-repeat: no-repeat;
-            display: inline-block;
-            padding-left: 15px;
-            padding-right: 15px;
-          }
-        .central_news-item_l{
-          font-size: 16px;
-          padding-left: 0px;
-          padding-bottom: 30px;
-          padding-right: 20px;
-          display: inline-block;
-          width: 195px;
-         }
-        .central_news-item_r{
-          font-size: 16px;
-          padding-left: 0px;
-          padding-bottom: 30px;
-          display: inline-block;
-          width: 200px;
-
-        }
-        .central-news-item-img{
-
-            height: 130px;
-        }
-        .central-news-item-text{
-          /*padding-bottom: 20px;*/
-          font-family: Arial;
-          max-height: 72px; /*без учета padding*/
-          margin-bottom: 10px;
-          overflow: hidden;
-        }
-        .central-news-item-props{
-          font-size: 12px;
-          display: inline;
-        }
-          .central-news-item-props a{
-            color:#c3c3ca;
-
-          }
-          .central-news-a{
-            width: 50%;
-            color:#c3c3ca;
-            display:  inline-block;
-          }
-          .central-news-time{
-            display: inline;
-            padding-left: 15px;
-            padding-right: 15px;
-            background-image: url('img/icon-time.png');
-            background-repeat: no-repeat;
-          }
-          .central-news-comments{
-            display: inline;
-            padding-left: 15px;
-            background-image: url('img/icon-comments.png');
-            background-repeat: no-repeat;
-          }
-      #column-right{
-          width: 250px;
-          float: right;
-      }
-        #column-right img{
-          margin-bottom: 20px;
-        }
-/*Специальные новости*/
- #sn-left-box{
-    float:left;
-    width: 59%;
-    height: 400px;
-    position: relative;
-  }
-    .sn-left-image{
-  /*  #sn-left-box img{*/
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    }
-   .snlb-background-gray{
-      position: absolute;
-      z-index: 2;
-      background-color: black;
-      opacity: 30%;
-      width: 100%;
-      height: 100%;
-    }
-    .sn-left-text-container{
-      position: absolute;
-      z-index: 3;
-      padding-left: 20px;
-    }
-    .snltc-article-name{
-      max-height: 3.3em; /*чтобы высота была не более*/
-      overflow: hidden; /* чтобы текст обрезался*/
-      margin-bottom: 15px;
-      font-size:20px;
-      padding-top: 20px;
-      padding-right: 180px;
-      font-weight: bold;
-      color:white;
-      height: 69px;
-    }
-    .snltc-href{
-      font-size: 12px;
-      position: relative;
-      padding-top:100px;
-    }
-      .snltc-href a{
-        color:#c3c3ca;
-      }
-    .snltc-props{
-        font-size: 12px;
-        position: relative;
-        min-height:12px;
-    }
-      .snltc-props-date{
-        position: absolute;
-        background-repeat: no-repeat;
-        color: #c3c3ca;
-      }
-      .snltc-props-time{
-        position: absolute;
-        padding-left: 15px;
-        left: 100px;
-        background-image: url('img/icon-time.png');
-        background-repeat: no-repeat;
-        color: #c3c3ca;
-      }
-      .snltc-article-text{
-        margin-top: 40px;
-        color: #c3c3ca;
-        font-size: 12px;
-        padding-right: 80px;
-        line-height: 1.5;
-      }
-  #sn-right-box{
-    float: left;
-    background-color: white;
-    width: 41%;
-    height: 400px;
-  }
-
-.footer{
-  background-color: #01122F;
-  height: 300px;
   margin: 0px;
+  padding: 0px;
 }
-  .footer-nav-panel{
-      margin-right: 0px;
-      display: inline-block;
-      width: 40%;
-      vertical-align: top;
-      margin-top: 55px;
-      margin-bottom: 65px;
+.fixed-container{
+  width: 960px;
+  margin: 0 auto;
+  background-color: blue;
 
+}
+  .list-tasks-column{
+    width: 470px;
+    margin-right: 20px;
+    margin-top: 64px;
+    margin-left: 0px;
+    padding: 0px;
+    position: relative;
+    float: left;
   }
-      .footer-nav-panel-column{
-        display: inline-block;
-        padding-right: 60px;
-        vertical-align: top;
+    .ltc-header{
+      font-size: 20px;
+      margin: 0 0 30px 0;
+      padding: 0px;
 
-
-        }
-      .footer-nav-panel-column a{
-          display: block;
-          color: white;
-          text-decoration: none;
-          font-size: 12px;
-          padding-bottom: 10px;
-          vertical-align: top;
-        }
-  .footer-news-agency{
-    display: inline-block;
-    width: 32%;
-    margin: 55px auto 0 auto;
-    vertical-align: top;
-    margin-bottom: 65px;
-
+    }
+  .ltc-emptylist{
+    font-size: 16px;
+    color: #8993ad;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
   }
-      .footer-news-agency img{
-        display: block;
-        margin-bottom: 10px;
-        margin-right: 0px;
+  .add-new-task-column{
+    margin-top: 64px;
+    width: 470px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    position: relative;
+    float: right;
+  }
+    .antc-header{
+      font-size: 20px;
+      padding: 0px;
+      margin: 0px;
+    }
+    .antc-main-field{
+      background-color: white;
+      width: 470;
+      margin-top: 30px;
+    }
+      .antc-main-field-label-name{
+        font-size: 14px;
+        color: #8993ad;
+        padding-top: 30px;
+        padding-left: 40px;
       }
-      .footer-news-agency a{
+      .antc-text-nameNewTask{
+        font-family: Arial;
+        margin-top: 11px;
+        margin-left: 40px;
+        outline: none; /*чтобы область не выделалась при вводе #ebebeb;;*/
+        font-size: 16px;
+        padding-left: 14px;
+        background-color: #f9f9f9;
+        border-width: 1px;
+        border-color: #ebebeb;
+        border-style: solid;
+        height: 48px;
+        width: 375px;
+      }
+      .antc-main-field-label-description{
+        font-size: 14px;
+        color: #8993ad;
+        margin-top: 30px;
+        margin-left: 40px;
+      }
+      .antc-text-descriptonNewTask{
+        font-family: Arial;
+        margin-top: 11px;
+        margin-left: 40px;
+        outline: none; /*чтобы область не выделалась при вводе;*/
+        font-size: 16px;
+        padding-left: 14px;
+        background-color: #f9f9f9;
+        border-width: 1px;
+        border-color: #ebebeb;
+        border-style: solid;
+        padding-top: 20px;
+        width: 375px;
+        resize: none; /*чтобы нельзя было изменить размеры*/
+      }
+      .antc-text-button{
+        margin-top: 30px;
+        margin-left: 40px;
+        bottom: 56px;
+        background-color: #2372f6;
         color: white;
-        text-decoration: none;
-        font-size: 12px;
-        display: block;
-        padding-bottom: 10px;
-
+        height: 55px;
+        width: 225px;
+        border-style:none;
+        font-size: 15px;
+        margin-bottom: 55px;
       }
-  .footer-contact{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 55px;
-    margin-bottom: 65px;
 
+
+/*-------------- Start newTask*/
+.ltc-task{
+  background-color: white;
+  width: 470px;
+  min-height: 50px;
+  border-bottom: 1px #ebebeb solid;
+  overflow: hidden;
+}
+  .ltc-nameTask{
+    position: relative;
+    float: left;
+    max-width: 300px;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 20px;
+    margin-right: 22px;
+  }
+  .button-deleteTask{
+    position: relative;
+    float: left;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-right: 22px;
+    border: none;
+    background-color: white;
 
   }
-      .footer-contact-social-media{
-        margin-bottom: 20px;
-      }
-        .fcsm-vk {
-          display: inline-block;
-          margin-left: 20px;
-        }
-          .fcsm-vk img{
-
-          }
-       .footer-contact-phone-number{
-         color: white;
-         margin-bottom: 25px;
-
-       }
-         .footer-contact-phone-number img{
-           margin-right: 19px;
-           margin-left: 20px;
-         }
-      .footer-contact-email{
-          color: white;
-      }
-        .footer-contact-email img{
-          margin-right: 19px;
-          margin-left: 20px;
-        }
-  .footer-greyline{
-    background-image:  url('img/line.png');
-    min-width: 1000px;
-    background-repeat: repeat;
-    height: 3px;
+  .button-rowDown{
+    position: relative;
+    float: right;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-right: 22px;
   }
-  .footer-finale-text{
-    color:#c3c3ca;
-    font-size:12px;
-    text-align: center;
-    min-width: 1000px;
-    margin-top: 15px;
-  }
+.ltc-descriptionTask
+{
+  font-size: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 22px;
+  color: #8993ad;
+  background-color: white;
+  min-height: 85px;
+  margin-bottom:20px;
+}
+/*-------------- Finish newTask*/
