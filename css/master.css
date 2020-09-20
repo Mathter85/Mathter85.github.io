@@ -145,6 +145,18 @@ main{
     margin-top: 18px;
     margin-bottom: 18px;
     margin-right: 22px;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border: none;
+    padding: 0;
+  }
+  .button-rowDown img{
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    padding: 0;
+    /* transform: rotate(-90deg); */
   }
 .ltc-descriptionTask
 {

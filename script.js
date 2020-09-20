@@ -12,7 +12,7 @@ $(function(){
           '<div class="ltc-task">'+
             '<div class="ltc-nameTask">'+ $('.antc-text-nameNewTask').val() +'</div>'+
             '<button class="button-deleteTask" type="button" name="deleteTask"><img src="img/del-button.png" alt="delete"></button>'+
-            '<button class="button-rowDown" type="button" name="rowDown"></button>'+
+            '<button class="button-rowDown" type="button" name="rowDown"><img src="img/rect-down.png" alt="hide"></button>'+
           '</div>'+
           '<div class="ltc-descriptionTask">'+
             $('.antc-text-descriptonNewTask').val()+
@@ -34,4 +34,19 @@ $(function(){
     $(this).parent().next().remove();
     $(this).parent().remove();
   });
+
+//обработка кнопки сворачивания описания задачи;
+  $(document).on('click','.button-rowDown',function() {
+    if ($(this).parent().next().is(':visible')==true){ //блок описания виден
+      $(this).parent().next().hide(); //блок описания удалить
+      $(this).parent().css({'margin-bottom':'20px'}); //добавить после блока с названимем отступ снизу
+      $(this).children().css({'transform':'rotate(-90deg)'});
+    } else {
+      $(this).parent().next().show();
+      $(this).parent().css({'margin-bottom':''});
+      $(this).children().css({'transform':'rotate(0deg)'});
+    }
+
+  });
+
 });
